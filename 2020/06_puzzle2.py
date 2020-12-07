@@ -1,9 +1,8 @@
 with open('06_input.txt', 'r') as file:
-    groups = file.read().split('\n\n')
+    groups = [group.split('\n') for group in file.read().split('\n\n')]
 
 result = 0
-for group in groups:
-    group_answers = group.split('\n')
+for group_answers in groups:
     same_answers = set(group_answers[0])
     for answer in group_answers[1:]:
         same_answers &= set(answer)
