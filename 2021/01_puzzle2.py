@@ -1,4 +1,4 @@
-with open("01_puzzle_input.txt", "r") as file:
+with open("2021/01_puzzle_input.txt", "r") as file:
     content = file.readlines()
 
 increased = 0
