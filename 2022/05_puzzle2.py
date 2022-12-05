@@ -1,6 +1,6 @@
 import re
 
-content = open("2022/04_puzzle_input.txt", "r").read().split("\n\n")
+content = open("2022/05_puzzle_input.txt", "r").read().split("\n\n")
 
 stacks_start_state = content[0].splitlines()
 producere = content[1].splitlines()
