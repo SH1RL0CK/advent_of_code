@@ -13,13 +13,13 @@ def parse():
         elif line.startswith("$ cd "):
             current_dirs.append(0)
         elif not line.startswith("dir ") and not line.startswith("$ ls"):
-            for i, el in enumerate(current_dirs):
+            for i, d in enumerate(current_dirs):
                 current_dirs[i] += int(line.split(" ")[0])
     return current_dirs + dirs
 
 
 def part_a():
-    return sum(filter(lambda el: el <= 100000, parse()))
+    return sum(filter(lambda d: d <= 100000, parse()))
 
 
 def part_b():
