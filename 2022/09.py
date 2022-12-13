@@ -1,15 +1,7 @@
-import copy
-
 from aocd.models import Puzzle
 
-import my_grids
-
 puzzle = Puzzle(2022, 9)
-# input_data = open("09_example_input.txt", "r").read().splitlines()
 input_data = puzzle.input_data.splitlines()
-
-grid = my_grids.grid_1
-grid = my_grids.grid_2
 
 
 def part_a():
