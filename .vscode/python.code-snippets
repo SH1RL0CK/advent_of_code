@@ -1,0 +1,32 @@
+{
+    "Advent of code": {
+        "prefix": "aoc",
+        "body": [
+            "from aocd.models import Puzzle",
+            "",
+            "puzzle = Puzzle(year=2023, day=${1:day})",
+            "input_data = puzzle.input_data.splitlines()",
+            "example_input_data = puzzle.examples[0].input_data.splitlines()",
+            "",
+            "",
+            "def part_a(data):",
+            "    ${0:pass}",
+            "",
+            "",
+            "def part_b(data):",
+            "    pass",
+            "",
+            "",
+            "if __name__ == '__main__':",
+            "    answer_a = part_a(example_input_data)",
+            "    print(f\"Answer A: {answer_a}\")",
+            "    # puzzle.answer_a = answer_a",
+            "    # answer_b = part_b(example_input_data)",
+            "    # print(f\"Answer B: {answer_b}\")",
+            "    # puzzle.answer_a = answer_a",
+            "    # puzzle.answer_b = answer_b"
+        ],
+        "description": "Advent of code 2023",
+        "isFileTemplate": true
+    }
+}
