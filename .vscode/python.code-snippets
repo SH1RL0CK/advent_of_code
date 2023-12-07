@@ -23,7 +23,6 @@
             "    # puzzle.answer_a = answer_a",
             "    # answer_b = part_b(example_input_data)",
             "    # print(f\"Answer B: {answer_b}\")",
-            "    # puzzle.answer_a = answer_a",
             "    # puzzle.answer_b = answer_b"
         ],
         "description": "Advent of code 2023",
