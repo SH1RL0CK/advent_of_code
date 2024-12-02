@@ -4,7 +4,7 @@
         "body": [
             "from aocd.models import Puzzle",
             "",
-            "puzzle = Puzzle(year=2023, day=${1:day})",
+            "puzzle = Puzzle(year=2024, day=${1:day})",
             "input_data = puzzle.input_data.splitlines()",
             "example_input_data = puzzle.examples[0].input_data.splitlines()",
             "",
