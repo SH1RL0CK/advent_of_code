@@ -5,12 +5,50 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current File",
-            "type": "python",
+            "name": "Part A Example",
+            "type": "debugpy",
             "request": "launch",
             "program": "${file}",
             "console": "internalConsole",
-            "justMyCode": true
+            "env": {
+                "MODE": "part_a_example",
+                "PYTHONPATH": "${workspaceFolder}:${env:PYTHONPATH}"
+            }
+        },
+        {
+            "name": "Part A",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "internalConsole",
+            "justMyCode": true,
+            "env": {
+                "MODE": "part_a",
+                "PYTHONPATH": "${workspaceFolder}:${env:PYTHONPATH}"
+            }
+        },
+        {
+            "name": "Part B Example",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "internalConsole",
+            "justMyCode": true,
+            "env": {
+                "MODE": "part_b_example",
+                "PYTHONPATH": "${workspaceFolder}:${env:PYTHONPATH}"
+            }
+        },
+        {
+            "name": "Part B",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "internalConsole",
+            "env": {
+                "MODE": "part_b",
+                "PYTHONPATH": "${workspaceFolder}:${env:PYTHONPATH}"
+            }
         }
     ]
 }
