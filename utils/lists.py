@@ -1,3 +1,11 @@
+class NoNegatives(list):
+    def __getitem__(self, index):
+        if index < 0:
+            raise ValueError("Index must be positive")
+        else:
+            return list.__getitem__(self, index)
+
+
 def most_common(lst, values=None):
     return max(values or set(lst), key=lst.count)
 

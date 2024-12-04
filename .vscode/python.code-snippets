@@ -2,8 +2,11 @@
     "Advent of code": {
         "prefix": "aoc",
         "body": [
-            "from aocd.models import Puzzle",
             "import os",
+            "",
+            "from aocd.models import Puzzle",
+            "",
+            "from utils import *",
             "",
             "puzzle = Puzzle(year=2024, day=${1:day})",
             "input_data = puzzle.input_data.splitlines()",

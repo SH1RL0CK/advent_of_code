@@ -10,7 +10,10 @@ NEIGH_DICT = {
 }
 
 NEIGH_DIRECT = [*{*NEIGH_DICT.values()}]
-NEIGH_DIAG = [tuple(NEIGH_DICT[a][i] + NEIGH_DICT[b][i] for i in range(2)) for a, b in zip("NESW", "ESWN")]
+NEIGH_DIAG = [
+    tuple(NEIGH_DICT[a][i] + NEIGH_DICT[b][i] for i in range(2))
+    for a, b in zip("NESW", "ESWN")
+]
 
 
 def get_neighbors(ox=0, oy=0, w=None, h=None, diag=False, include_self=False):
