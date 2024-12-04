@@ -49,26 +49,6 @@ def part_a(data):
     return result
 
 
-POSITION_TYPE = tuple[int, int]
-
-NEIGHBORS_DICT: dict[str, POSITION_TYPE] = {
-    "U": (-1, 0),
-    "D": (1, 0),
-    "L": (0, -1),
-    "R": (0, 1),
-    "UL": (-1, -1),
-    "UR": (-1, 1),
-    "DL": (1, -1),
-    "DR": (1, 1),
-    "S": (0, 0),
-}
-
-P2 = [
-    [(NEIGHBORS_DICT[d], x) for d, x in zip(["UL", "DL", "DR", "UR"], m)]
-    for m in ["MMSS", "SMMS", "SSMM", "MSSM"]
-]
-
-
 def part_b(data):
     data = NoNegatives([NoNegatives(row) for row in data])
     result = 0
